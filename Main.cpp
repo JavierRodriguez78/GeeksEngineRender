@@ -12,11 +12,14 @@ GLFWwindow* window;
 // Include GLM
 #include <glm/glm.hpp>
 #include "Logger.h"
-using namespace glm;
+#include <Windows.h>
+#include "Window.h"
 
 int main(void)
 {
 
 	Logger::Message("OpenGL functions succesfully loaded.", LOG_INIT);
-	
+	Window::Up();
+
+
 }
